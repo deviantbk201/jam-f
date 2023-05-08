@@ -1,0 +1,21 @@
+.featured-section {
+  /* padding: 1rem 2rem;
+  min-width: 60vw;
+  max-width: 80vw;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-column: 2 / span 1; */
+}
+.featured-heading-tertiary {
+  grid-row: 1 / span 1;
+}
+.featured-slide {
+  grid-row: 2 / span 1;
+}
+
+.featured-heading {
+  grid-row: 3 / span 1;
+}
+.featured-subheading {
+  grid-row: 3 / span 1;
+}

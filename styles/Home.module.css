@@ -1,0 +1,12 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 70vw 1fr;
+  grid-template-rows: 80vh min-content;
+}
+
+.hero-section {
+  grid-column: 1/-1;
+}
+.featured-section {
+  grid-column: 2 / span 1;
+}
