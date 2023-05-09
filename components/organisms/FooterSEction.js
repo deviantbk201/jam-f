@@ -61,7 +61,7 @@ export default function FooterSection() {
       </div>
       {/* ===================Our Links----------------- */}
       <FooterNav
-        className="our-links"
+        className="our-links footer-links"
         navItems={[
           { href: "#", destination: "Home" },
           { href: "#", destination: "Headless Ecommerce" },
@@ -71,7 +71,7 @@ export default function FooterSection() {
         title="our Links"
       />
       <FooterNav
-        className="other-links"
+        className="other-links footer-links"
         navItems={[
           { href: "#", destination: "About us " },
           { href: "#", destination: "Carrers" },

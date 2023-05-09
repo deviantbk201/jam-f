@@ -6,7 +6,7 @@ const breakpoints = {
   md: "48em", //768PX 9PX
   lg: "64em", //1024PX10PX
   xl: "75em", //1200PX 10PX
-  "2xl": "96em", // 1535PX
+  xxl: "96em", // 1535PX
 };
 
 export const devices = {
@@ -44,7 +44,7 @@ body {
 
 }
   @media only screen and ${devices.sm}{
-     font-size: 10% ;
+     font-size: 43.75% ;
   }
 }
 
@@ -67,6 +67,7 @@ export const Theme = {
     white: "#fff",
     black: "#000",
     greyDark: "#666",
+    tertiaryLight: "#faebd7",
   },
 };
 

@@ -13,6 +13,7 @@ const theme = {
     white: "#fff",
     black: "#000",
     greyDark: "#666",
+    tertiaryLight: "#faebd7",
   },
 };
 export default function App({ Component, pageProps }) {

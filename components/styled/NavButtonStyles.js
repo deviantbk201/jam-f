@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { devices } from "./Global";
 export const StyledNavButton = styled.div`
   grid-column: 3 / span 1;
   justify-self: center;

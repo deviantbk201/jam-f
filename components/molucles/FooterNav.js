@@ -7,7 +7,7 @@ export default function FooterNav({ navItems, title }) {
   ));
 
   return (
-    <StyledFooterNav>
+    <StyledFooterNav className="footer-nav">
       <HeadingTertiary text={title} />
       {navItemlList}
     </StyledFooterNav>

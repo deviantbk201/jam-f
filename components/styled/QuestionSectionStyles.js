@@ -8,7 +8,7 @@ export const StyledQuestionsSection = styled.div`
   padding: 2rem;
   background-image: url(/bg__with-dotted.svg);
   background-position: center;
-
+  margin: 6rem;
   @media only screen and (${devices.xl}) {
     padding: 1rem;
   }
