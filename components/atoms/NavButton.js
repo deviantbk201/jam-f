@@ -1,18 +1,10 @@
 import { useState } from "react";
 import { Burgerbutton } from "../styled/BurgerMenu";
 import { StyledNavButton } from "../styled/NavButtonStyles";
-export default function NavButton() {
-  const [active, setActive] = useState(false);
-
-  let btnClass = "btn";
-
-  function handleClick(e) {
-    e.stopPropagation();
-    alert("working");
-  }
+export default function NavButton({ handleClick }) {
   return (
-    <StyledNavButton onClick={handleClick}>
-      <div className="btn"></div>
+    <StyledNavButton>
+      <div onClick={handleClick} className="btn"></div>
     </StyledNavButton>
   );
 }

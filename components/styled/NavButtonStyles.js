@@ -4,7 +4,7 @@ export const StyledNavButton = styled.div`
   grid-column: 3 / span 1;
   justify-self: center;
   align-self: center;
-
+  z-index: 1000;
   // btn regular=========================>
   & .btn {
     width: 2rem;

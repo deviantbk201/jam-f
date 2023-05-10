@@ -12,7 +12,7 @@ import ButtonGlow from "../atoms/ButtonGlow";
 import Img from "../atoms/Img";
 import { ImgCover } from "../atoms/Img";
 import Link from "next/link";
-
+import SocialLinks from "../molucles/SocialLinks";
 export default function FooterSection() {
   return (
     <StyledFooterSection>
@@ -61,6 +61,7 @@ export default function FooterSection() {
       </div>
       {/* ===================Our Links----------------- */}
       <FooterNav
+        color={({ theme }) => theme.color.greyDark}
         className="our-links footer-links"
         navItems={[
           { href: "#", destination: "Home" },
@@ -71,6 +72,7 @@ export default function FooterSection() {
         title="our Links"
       />
       <FooterNav
+        color={({ theme }) => theme.color.greyDark}
         className="other-links footer-links"
         navItems={[
           { href: "#", destination: "About us " },
@@ -94,20 +96,7 @@ export default function FooterSection() {
           /> */}
         </div>
 
-        <div className="cta-card__social-Links">
-          <Link href="#">
-            <Img w={40} h={40} alt="social-logo" src="/facebook.svg" />
-          </Link>
-          <Link href="#">
-            <Img w={40} h={40} alt="social-logo" src="/instagram.svg" />
-          </Link>
-          <Link href="#">
-            <Img w={40} h={40} alt="social-logo" src="/twitter.svg" />
-          </Link>
-          <Link href="#">
-            <Img w={40} h={40} alt="social-logo" src="/linkedin.svg" />
-          </Link>
-        </div>
+        <SocialLinks w={40} h={40} />
 
         <ButtonGlow
           className="cta-card__button"

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledFooterLink = styled.a`
   &:link,
   &:visited {
-    color: ${({ theme }) => theme.color.greyDark};
+    color: ${(props) => props.color};
     font-size: 1.8rem;
     text-transform: upperrcase;
     text-decoration: none;
@@ -14,6 +14,6 @@ export const StyledFooterLink = styled.a`
   &:hover,
   &:active {
     transform: scale(1.2) translateX(2rem);
-    color: ${({ theme }) => theme.color.primary};
+    color: ${(props) => props.hoverColor};
   }
 `;

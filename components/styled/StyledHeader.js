@@ -6,6 +6,21 @@ export const StyledHeader = styled.header`
   align-items: center;
   justify-items: center;
 
+  & .hidden {
+    opacity: 0;
+    transform: translateX(200%);
+    transition: all 0.5s ease-out;
+  }
+
+  & .show {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-out;
+  }
   @media only screen and ${devices.lg} {
+    & .logo {
+      justify-self: start;
+      padding: 2rem;
+    }
   }
 `;
